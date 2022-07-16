@@ -55,7 +55,7 @@ a {
     position: absolute;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 80%;
     z-index: -1;
     top: 0;
     left: 0;
@@ -84,6 +84,7 @@ a {
     opacity: 0;
     color: #000;
 }
+
 .header .navb li {
     display: inline-block;
     margin-left: 35px;
@@ -102,6 +103,7 @@ a {
 .header .navb li a:hover {
     color: rgb(87, 87, 241);
 }
+
 .page-wrapper {
     width: 100%;
     height: 100vh;
@@ -132,10 +134,12 @@ a {
 .content__img {
     padding: 30px;
 }
+
 .data__content {
     transform: translateX(-100%);
     opacity: 0;
 }
+
 .img__content {
     width: 700px;
     height: auto;
@@ -208,6 +212,7 @@ a {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .header .navb li {
         display: none;
     }
@@ -215,6 +220,7 @@ a {
     .content {
         margin-top: 120px;
     }
+
     .row {
         grid-template-columns: 1fr;
     }
@@ -231,8 +237,8 @@ a {
     .img__content {
         padding-top: 34px;
         width: 100%;
-        /* height: 100%; */
     }
+
     .container-f {
         bottom: -470px;
     }
