@@ -206,11 +206,14 @@ a {
     color: rgb(87, 87, 241);
 }
 
+.humbger__menu {
+    display: none;
+}
+
 @media screen and (max-width: 991px) {
     .header .logo {
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 20px;
     }
 
     .header .navb li {
@@ -241,5 +244,75 @@ a {
 
     .container-f {
         bottom: -470px;
+    }
+
+    .humbger {
+        position: absolute;
+        display: block;
+        top: 30px;
+        right: 1.5rem;
+        width: 35px;
+        height: 35px;
+
+        z-index: 2;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .humbger .bar,
+    .humbger::before,
+    .humbger::after {
+        content: "";
+        display: block;
+        margin: 6px;
+        width: 80%;
+        height: 4px;
+        border-radius: 12px;
+        background-color: #000;
+        transition: .4s;
+    }
+    .humbger.active::before {
+        transform: rotate(-45deg) translate(-9px, 4px);
+    }
+    .humbger.active::after {
+        transform: rotate(45deg) translate(-10px, -5px);
+    }
+    .humbger.active .bar {
+        opacity: 0;
+    }
+    .humbger__menu {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: rgb(255, 255, 255, 0.87);
+
+        transition: .5s;
+    }
+    .humbger__menu.active {
+        right: 0%;
+    }
+    .humbger__menu ul {
+        position: absolute;
+        top: 80px;
+        left: 21px;
+    }
+
+    .humbger__menu li {
+        display: block;
+        margin-bottom: -13px;
+    }
+
+    .humbger__menu li a {
+        display: block;
+        color: #000;
+
+        transition: color .5s;
+    }
+
+    .humbger__menu li a:hover {
+        color: rgb(87, 87, 241);
     }
 }
