@@ -170,6 +170,22 @@ a {
     border-radius: 8px;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+.footer .row-f li {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.footer .row-f li a {
+    display: block;
+    color: #000;
+    font-size: 26px;
+}
 @media screen and (max-width: 991px) {
     .header .logo {
         position: relative;
